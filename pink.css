@@ -1,0 +1,183 @@
+/*
+div#pad {
+	height: 100px;
+	width:100%;
+	color:#6BE8FE;
+	position: relative;
+}
+
+div#left-pad {
+	height: 300px;
+	width:100px;
+	float:left;
+	color:#6BE8FE;
+}*/
+
+/*div#pink {
+	height: 300px;
+	width: 300px;
+	padding-left: 100px;
+	background-color: #CF04D9;
+	border-bottom-left-radius: 90%;
+	border-top-right-radius: 90%;
+	transform: rotate(20deg);
+	transform: skewY(20deg);
+	transform: scaleY(1.5);
+	/*animation: mymove 10s infinite;*/
+	/*animation: left-border 10s infinite, right-border 20s infinite, wiggle 1.75s infinite;
+	opacity: 75%;
+	float: left;
+	position: relative;
+	box-shadow: inset 0px 0px 70px 40px #F78AFD;
+}*/
+
+/*<div class="tk-blob" style="--fill: #ff4b82;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.2 356.7">
+    <path d="M271.9 50.3c30.6 29.3 51.3 75.5 46.6 123.9-4.6 48.4-34.6 99-86.5 136.3s-125.6 61.4-168.3 35.3S9.4 243.5 3.4 177.3C-2.7 111.2-3.1 55.2 24 26.7 51.1-1.9 105.9-2.9 153.4 2.8c47.6 5.8 88 18.2 118.5 47.5z"></path>
+  </svg>
+</div>
+*/
+
+body {
+	background-color: #EFFAF9;
+}
+
+
+div#pink-2 {
+	height: 0px;
+	width: 0px;
+	background-color: #CF04D9;
+	border-radius: 50%;
+	animation: bubble 15s infinite, bounce 1s infinite;
+	animation-direction: alternate;
+	opacity: 65%;
+	float: left;
+	position: relative;
+	box-shadow: inset 0px 0px 200px 30px #F78AFD;
+}
+
+
+div#pink-3 {
+	height: 0px;
+	width: 0px;
+	background-color: #CF04D9;
+	border-radius: 50%;
+	animation: bubble 15s infinite, bounce 2s infinite, padding-wiggle 2s infinite;
+	animation-direction: alternate;
+	opacity: 65%;
+	float: left;
+	position: relative;
+	box-shadow: inset 0px 0px 100px 30px #F78AFD;
+}
+
+div#pink-4 {
+	height: 0px;
+	width: 0px;
+	background-color: #CF04D9;
+	border-radius: 50%;
+	animation: bubble 15s infinite, bounce 5s infinite;
+	animation-direction: alternate;
+	opacity: 65%;
+	float: left;
+	position: relative;
+	box-shadow: inset 0px 0px 100px 30px #F78AFD;
+}
+
+@keyframes padding-wiggle {
+	0% { 	padding-left: 50px; 
+			padding-top: 100px;}
+   80% { padding-left: 110px; 
+			padding-top: 0px; }
+   85% { padding-left: 300px; 
+			padding-top: 100px;}
+   95% { padding-left: 50px; 
+			padding-top: 100px;}
+  100% { padding-left: 50px; 
+			padding-top: 100px;}
+}
+
+/*div#pink:after {
+    content: 'green';
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black(.3);
+    text-align: right;
+    padding-right: 47px;
+    padding-top: 17px;
+    animation: roundandround 5s infinite;
+}
+.path {
+	background-color: #F78AFD;
+}*/
+
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 400px, 0); }
+}
+
+
+@keyframes bubble {
+  from {
+    height: 20px;
+	width: 10px;
+  }
+  to {
+   	height: 400px;
+	width: 400px;
+  }
+}
+
+@keyframes right-border {
+  from {
+    border-top-right-radius: 90%
+  }
+  to {
+    border-top-right-radius: 0%
+  }
+}
+
+
+@keyframes left-border {
+  from {
+    border-bottom-left-radius: 90%
+  }
+  to {
+    border-bottom-left-radius: 0%
+  }
+}
+
+@keyframes right-border {
+  from {
+    border-top-right-radius: 90%
+  }
+  to {
+    border-top-right-radius: 0%
+  }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes roundandround {
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes disappear {
+	from {
+	opacity: 0%;
+}
+to {
+	opacity: 70%;
+}
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
