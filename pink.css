@@ -8,7 +8,7 @@ height: 0px;
 width: 0px;
 background-color: #CF04D9;
 border-radius: 50%;
-animation: bubble 15s infinite, bounce 1s infinite, padding-wiggle 1s infinite;
+animation: bubble 15s infinite, bounce 1s infinite, padding-wiggle 1s infinite, float-bounce 1s infinite;
 animation-direction: alternate;
 opacity: 65%;
 float: left;
@@ -22,7 +22,7 @@ height: 0px;
 width: 0px;
 background-color: #CF04D9;
 border-radius: 50%;
-animation: bubble 15s infinite, bounce 2s infinite, padding-wiggle 2s infinite;
+animation: bubble 15s infinite, bounce 2s infinite, padding-wiggle 2s infinite, float-bounce 3s infinite;
 animation-direction: alternate;
 opacity: 65%;
 float: left;
@@ -35,11 +35,23 @@ height: 0px;
 width: 0px;
 background-color: #CF04D9;
 border-radius: 50%;
-animation: bubble 15s infinite, bounce 5s infinite;
+animation: bubble 15s infinite, bounce 5s infinite, padding-wiggle 2s infinite, float-bounce 6s infinite;
 animation-direction: alternate;
 opacity: 65%;
 float: left;
 position: relative;
+box-shadow: inset 0px 0px 100px 30px #F78AFD;
+}
+
+div#pink-5 {
+height: 0px;
+width: 0px;
+background-color: #CF04D9;
+border-radius: 50%;
+animation: bubble 13s infinite, bounce 5s infinite, appear 5s infinite, float-bounce 5s infinite;
+animation-direction: alternate;
+float: left;
+position: absolute;
 box-shadow: inset 0px 0px 100px 30px #F78AFD;
 }
 
@@ -55,6 +67,12 @@ padding-top: 100px;}
   to   { transform: translate3d(0, 400px, 0); }
 }
 
+@keyframes float-bounce {
+  from { left: 40px;
+          right: 00px;}
+  to {left:0px;
+      right:40px;}
+}
 
 @keyframes bubble {
   from {
@@ -67,3 +85,7 @@ width: 400px;
   }
 }
 
+@keyframes appear {
+  0% { opacity: 0%;}
+  50% { opacity: 65%;}
+}
