@@ -1,0 +1,123 @@
+svg {
+  font: 10px sans-serif;
+}
+
+body{
+    background-color: #F0F0F0;
+    color:#000000;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+.ptext{
+  position: absolute;
+  TOP:450px;
+  LEFT:1000px;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  font-weight: lighter;
+  font-family: sans-serif;
+	padding: 5px 5px 5px 2px;
+  width:200px;
+  border: 1px solid #bbbbbb;
+  font-size: 11px;
+  height: 135px;
+}
+
+
+.color-legend text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12pt;
+      }
+
+.area {
+  fill: #B4B4B4;
+  opacity: .8;
+  clip-path: url(#clip);
+}
+
+.layer {
+  clip-path: url(#clip);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #565656;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+
+/* brush style */
+.brush .extent {
+  stroke: black;
+  fill: white;
+  fill-opacity: .6;
+  shape-rendering: crispEdges;
+}
+
+
+
+/* Tooltip style */
+.node--hover circle {
+  stroke: #000;
+  stroke-width: 1.2px;
+  border: 5px;
+}
+  .tooltip {
+    background-color: #f7f7f7;
+    padding: 3px 12px;
+    max-width: 350px;
+    width: 300px;
+    height: 350px;
+    overflow-y: auto; 
+    font-family: sans-serif;
+    border: 1px solid #bbbbbb;
+    box-shadow: 2px 2px 2px gray;
+    word-wrap: break-word;
+  }
+  .tooltip_title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+    max-width: 350px;
+    word-wrap: normal;
+  }
+  .article-info{
+    color:#000000;
+    overflow-y:auto;
+    position:absolute;
+    left:475px;
+    float:left;
+    width:470px;
+    height:170px;
+    margin-left:5px;
+}
+  .tooltip_body {
+    font-weight: normal;
+    color:#000000;
+    overflow-y:auto;
+    position:absolute;
+    width:     90%;
+    margin-left:2px;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+  }
+
