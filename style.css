@@ -1,37 +1,53 @@
 body {
   margin: 0px;
   font-family: 'Inconsolata', monospace;
-  background-image: url("ersatzGirl/IMG_1294.JPG");
+  /* background-color: #ffffff; */
+  background-image: url("ersatzGirl/IMG_1294.png");
+  height: 800px;
+  width: 600px;
   background-blend-mode: screen;
+  animation: animatedBackground 30s linear infinite;
+  animation-direction: alternate-reverse;
+  transform: rotate(20deg);
+}
 
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 50% 20%; }
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 60%;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .toc-container {
-  background: #f2dff7;
-  padding: 32px;
+  background: #DDE8EC;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 32px;
   line-height: 36px;
   font-size: 22px;
+  border-radius: 1%;
   position: relative;
-  box-shadow:
-  inset 5px 5px 10px #000000
+  box-shadow: inset 5px 5px 15px #000000
   /* inset -5px -5px 10px blue; */
 }
 
 .header {
   text-transform: uppercase;
+  /* font-weight: 600; */
   color: black;
-  height: 30px;
-  margin-bottom: 20px;
+  height: 10%;
+  margin:5px;
   font-family: 'Kosugi Maru', sans-serif;
   text-align: center;
+
 }
 
 ul {
@@ -47,7 +63,11 @@ a, a:visited {
   text-decoration: none;
 }
 
+li#click {
+  color: red;
+}
+
 a:hover {
   text-decoration: underline;
-  background-color: #D6FF33
+  background-color: #A2C724;
 }
