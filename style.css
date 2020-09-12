@@ -1,7 +1,9 @@
 body {
   margin: 0px;
   font-family: 'Inconsolata', monospace;
-  background: lavenderblush;
+  background-image: url("ersatzGirl/IMG_1294.JPG");
+  background-blend-mode: screen;
+
 }
 
 .container {
@@ -18,13 +20,16 @@ body {
   line-height: 36px;
   font-size: 22px;
   position: relative;
+  box-shadow:
+  inset 5px 5px 10px #000000
+  /* inset -5px -5px 10px blue; */
 }
 
 .header {
   text-transform: uppercase;
-  color: darkslateblue;
-  height: 40px;
-  margin-bottom: 50px;
+  color: black;
+  height: 30px;
+  margin-bottom: 20px;
   font-family: 'Kosugi Maru', sans-serif;
   text-align: center;
 }
@@ -44,4 +49,5 @@ a, a:visited {
 
 a:hover {
   text-decoration: underline;
+  background-color: #D6FF33
 }
