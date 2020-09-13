@@ -1,39 +1,54 @@
+*{
+  margin, padding:0;
+}
 body {
   margin: 0px;
   font-family: 'Inconsolata', monospace;
-  /* background-color: #ffffff; */
   background-image: url("ersatzGirl/IMG_1294.png");
-  height: 800px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   background-blend-mode: screen;
   animation: animatedBackground 30s linear infinite;
   animation-direction: alternate-reverse;
-  transform: rotate(20deg);
 }
 
+.background-image {
+  background-image: url("ersatzGirl/IMG_1294.png");
+  animation: animatedBackground 30s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+
 @keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 50% 50%; }
+	from { background-position: 0 0;
+        transform: rotate(0deg); }
+	to { background-position: 50% 50%;
+        transform: rotate(110deg)''}
+}
+.pad {
+width: 100%;
+height: 20%;
 }
 
 .container {
-  position: relative;
-  width: 70%;
-  top: 65%;
-  left: 60%;
+  position: fixed;
+  width: 20%;
+  top: -50%;
+  left: 50%;
   opacity: 85%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 
 }
 
 .toc-container {
   background: #DDE8EC;
-  padding-left: 32px;
+  /* padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
-  padding-bottom: 32px;
-  line-height: 32px;
-  font-size: 22px;
+  padding-bottom: 32px; */
+  padding: 5%;
+  line-height: 1.6em;;
+  font-size: 1em;
   border-radius: 2%;
   position: relative;
   box-shadow: inset 5px 5px 15px #000000
@@ -47,17 +62,16 @@ body {
   height: 10%;
   /* margin:5px; */
   font-family: 'Kosugi Maru', sans-serif;
+  opacity: 80%;
   text-align: center;
-  margin-bottom: 0px;
 
 }
 
 ul {
-  margin: 0px;
+  opacity: 80%;
 }
 
 h3 {
-  margin-top: 0px;
   color: rgb(45, 147, 152);
 }
 
