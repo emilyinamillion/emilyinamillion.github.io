@@ -124,6 +124,7 @@ a:hover {
   text-decoration: underline;
   /* background-color: #A2C724; */
   background-color: #F708AB;
+  opacity: 80%;
   color: white;
 
 }
