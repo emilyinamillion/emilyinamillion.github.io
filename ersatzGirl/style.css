@@ -1,0 +1,129 @@
+/* * {
+  margin: 0;
+  padding:0;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  /* background-color: #ffffff; */
+  background: black;
+  width: 100%;
+  height: 100%;
+  /* transform: rotate(20deg); */
+}
+
+div#explain, p {
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  opacity: 80%;
+}
+
+table, th, td {
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+table {
+  height: 300px;
+  width: 600px;
+}
+
+img {
+  height: 350px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.horiz {
+  width: 45%;
+}
+.vert {
+  width: 25%;
+}
+
+img:hover {
+  opacity: 70%;
+}
+
+.gallery {
+  border: white solid 1px;
+  /* padding-top: 56; */
+  /* width: 1000px; */
+  width:95%;
+}
+
+.container {
+  position: relative;
+  /* margin: 30px; */
+  /* padding: 10px; */
+  width: 1000px;
+  height: 90;
+  background: black;
+  left: 20%;
+}
+
+
+/* .toc-container {
+  width: 70%;
+  background: #DDE8EC;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 32px;
+  line-height: 32px;
+  font-size: 22px;
+  border-radius: 2%;
+  position: relative;
+  box-shadow: inset 5px 5px 15px #000000
+  /* inset -5px -5px 10px blue; */
+
+.header {
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  color: #ffffff;
+  height: 10%;
+  /* margin:5px; */
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  opacity: 80%;
+}
+
+ul {
+  margin: 0px;
+}
+
+.big {
+  height: 400px;
+}
+
+h3 {
+  margin-top: 0px;
+  position: relative;
+  color: #ffffff;
+}
+
+ul li {
+  list-style-type: decimal-leading-zero;
+}
+
+a, a:visited {
+  color: #F708AB ;
+  text-decoration: none;
+}
+
+li#click {
+  color: rgb(165, 39, 9);
+}
+
+
+a:hover {
+  text-decoration: underline;
+  /* background-color: #A2C724; */
+  background-color: #F708AB;
+  color: white;
+
+}

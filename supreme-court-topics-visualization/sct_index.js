@@ -154,7 +154,7 @@ function draw(error, data) {
                     .style("font-size", 15)
                     .style("text-anchor", 'middle');
 
-  
+
 
   var addTooltip = function(d) {
    tooltip.html("");
@@ -167,7 +167,7 @@ function draw(error, data) {
   html = "Example Case: " + "\n" + "<i><b>" + topicData.title + "</b></i>"+ "\n";
   html += topicData.leadpp + "..." + "<a href=" + topicData.url + " target='_blank'>" + "[READ MORE]"+ "</a>" + "\n\n\n\n"
   html += "Topic Words: " + "\n" + topicData.topicwords + "\n";
-  
+
 
    tooltip.select(".tooltip_body").html(html);
 
@@ -187,7 +187,7 @@ function draw(error, data) {
           .style("fill", "black")
           .attr("opacity", 1);
         addTooltip(d);
-        
+
         tooltip.style("top", 15 + "px").style("left", 65 + "px");
           d3.event.stopPropagation();
       })
@@ -196,7 +196,7 @@ function draw(error, data) {
         d3.selectAll(".layer").attr("opacity", 1)
                               .style("fill", function(d, i) { return z(d.key); });
         tooltip.style("visibility", "hidden");
-        
+
   })
 
 
@@ -219,13 +219,13 @@ focus.append("text")
                     .style("text-anchor", 'middle');
 
 focus.append("text")
-                    
+
                     .attr("dy", "1.14em")
                     .attr("transform", "rotate(-90)")
                     .style("fill", '#555555')
                     .text("Number of Cases")
                     .style("font-size", 10)
-                    .style("text-anchor", 'end');                    
+                    .style("text-anchor", 'end');
 
 focus.append("text")
                     .attr("x", width / 2)
@@ -233,7 +233,7 @@ focus.append("text")
                     .style("fill", '#555555')
                     .text("(click the graph for details)")
                     .style("font-size", 12)
-                    .style("text-anchor", 'middle');                    
+                    .style("text-anchor", 'middle');
 
 svg.append("g")
   .attr("class", "legendOrdinal")
@@ -254,4 +254,3 @@ function brushed() {
   focus.selectAll(".layer").attr("d", function(d) { return area(d.values); })
   focus.select(".x.axis").call(xAxis);
 }
-
