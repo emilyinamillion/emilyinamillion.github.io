@@ -2,7 +2,7 @@ body {
   margin: 0px;
   font-family: 'Inconsolata', monospace;
   /* background-color: #ffffff; */
-  background-image: url("ersatzGirl/IMG_1294.png");
+  background-image: url("Pages/Assets/imgs/IMG_1294.png");
   height: 800px;
   width: 600px;
   background-blend-mode: screen;
@@ -34,26 +34,28 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
-  padding-bottom: 32px;
-  line-height: 32px;
+  padding-bottom: 30px;
+  line-height: 30px;
   font-size: 22px;
   /* border-radius: 50%; */
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   position: relative;
   box-shadow: inset 5px 5px 15px #000000;
-  /* inset -5px -5px 10px blue; */
+  /* box-shadow: 10px 15px 1px 8px rgba(247, 8, 171, .8); */
+
 }
 
 .header {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   /* font-weight: 600; */
   color: black;
   /* height: 10%; */
   /* margin:5px; */
-  padding-top: 10px;
-  font-family: 'Baloo Tammudu 2', sans-serif;
+  padding-top: 12px;
+  font-family: 'Baloo Tammudu 2', monospace;
   text-align: center;
   margin-bottom: 0px;
+  position: static;
 
 }
 
