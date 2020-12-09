@@ -102,8 +102,10 @@ ul {
 
 h3 {
   margin-top: 0px;
+  margin-bottom: 10px;
   position: relative;
-  color: #ffffff;
+  color: black;
+  padding-left: 20px;
 }
 
 ul li {
@@ -127,17 +129,25 @@ li#click {
   color: rgb(165, 39, 9);
 }
 
-iframe {
+iframe.vim {
   position: relative;
   margin-top: 10px;
   margin-left: 50px;
 }
 
+iframe {
+  padding-left: 10px;
+}
+
 p {
-  padding-left: 20px;
+  margin-left: 20px;
   padding-right: 20px;
   text-align: justify;
   text-justify: inter-word;
+}
+
+p.fr {
+  margin-left: 20px;
 }
 a:hover {
   text-decoration: underline;
