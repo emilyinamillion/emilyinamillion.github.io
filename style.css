@@ -8,6 +8,7 @@ body {
   background-blend-mode: screen;
   animation: animatedBackground 30s linear infinite;
   animation-direction: alternate-reverse;
+  cursor: none;
   /* transform: rotate(20deg); */
 }
 
@@ -81,6 +82,7 @@ li#click {
   color: #F708AB;
 }
 
+selector { cursor: none; }
 
 a:hover {
   text-decoration: underline;
