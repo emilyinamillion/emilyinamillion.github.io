@@ -26,8 +26,15 @@ function draw() {
   canvas.style("z-index", -1);
   mouseMoved();
 
+  let element;
+  window.addEventlistener("load",init);
+  function init() {
+    let element = window.document.getElementById('name');
+    // let rect = element.getBoundingClientRect();
+    element.addEventListener("click", function {
+      element.style.color = getRandomColor();
+    })
+  }
 
-  let element = window.document.getElementById('name');
-  let rect = element.getBoundingClientRect();
 
 };
