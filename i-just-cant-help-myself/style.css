@@ -134,6 +134,9 @@ iframe.vim {
   margin-top: 10px;
   margin-left: 50px;
 }
+iframe.fra {
+  padding-right: 20px;
+}
 
 iframe {
   padding-left: 10px;
